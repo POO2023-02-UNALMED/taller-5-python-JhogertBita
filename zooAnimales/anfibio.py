@@ -8,9 +8,9 @@ class Anfibio(Animal):
         self._colorPiel = piel
         self._venenoso = venenoso
         Anfibio._listaAnfibios.append(self)
-    @staticmethod
-    def cantidadAnfibios():
-        return len(Anfibio._listaAnfibios)
+    @classmethod
+    def cantidadAnfibios(cls):
+        return len(cls._listaAnfibios)
     @staticmethod
     def movimiento():
         return "saltar"
